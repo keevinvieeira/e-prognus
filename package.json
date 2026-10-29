@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite build && node build.js",
+    "build": "npx --yes vite build && node build.js",
     "preview": "npx vite preview"
   },
-  "devDependencies": {
+  "dependencies": {
     "vite": "^5.4.10"
   }
 }
