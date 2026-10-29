@@ -78,7 +78,13 @@
 
       <div class="relative z-10 max-w-5xl mx-auto w-full my-auto py-8">
         <div class="terminal-line w-28 mb-6"></div>
-        <span class="font-code text-xs md:text-sm text-secondary uppercase tracking-widest block mb-3"># E-PROGNUS ENGENHARIA &amp; LAUDOS</span>
+
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.04] border border-secondary/40 backdrop-blur-md mb-6 shadow-[0_0_15px_rgba(0,227,253,0.15)]">
+          <span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_10px_#00e3fd] animate-pulse"></span>
+          <span class="font-heading font-black text-sm sm:text-base md:text-lg text-white tracking-wider uppercase">
+            E-PROGNUS <span class="text-secondary font-code text-xs sm:text-sm font-semibold tracking-widest">| ENGENHARIA &amp; LAUDOS</span>
+          </span>
+        </div>
 
         <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-white">
           A engenharia que avalia o presente e <span class="text-primary">protege o amanhã</span>
@@ -111,63 +117,22 @@
     </section>
 
     <!-- Serviços Especializados -->
-    <!-- Hook futuro: painel E-Prognos (CRUD de serviços + envio de apresentação comercial HTML via e-mail/WhatsApp) -->
     <section id="servicos" class="py-24 px-6 bg-surface-low relative" data-eprognos-services>
       <div class="max-w-7xl mx-auto">
-        <div class="mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-          <div>
-            <p class="font-code text-xs text-primary tracking-widest uppercase mb-2">// O QUE FAZEMOS</p>
-            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white">SERVIÇOS ESPECIALIZADOS</h2>
-          </div>
-          <!-- Placeholder visual para painel futuro (não funcional) -->
-          <button type="button" id="painel-eprognus-trigger" class="hidden sm:inline-flex items-center gap-2 font-code text-[10px] tracking-widest uppercase text-gray-500 border border-white/10 px-3 py-2 rounded hover:border-primary/40 hover:text-primary transition-colors" title="Painel E-Prognus (em breve)" aria-label="Painel E-Prognus" disabled>
-            <span class="material-symbols-outlined text-base">dashboard</span>
-            Painel E-Prognus
-          </button>
+        <div class="mb-12">
+          <p class="font-code text-xs text-primary tracking-widest uppercase mb-2">// O QUE FAZEMOS</p>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white">SERVIÇOS ESPECIALIZADOS</h2>
         </div>
         <div class="terminal-line w-full mb-10 opacity-30"></div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <!-- 01 Wallboxes -->
+          <!-- 01 Engenharia Diagnóstica, Prognósticos & Laudos -->
           <article class="glass-panel p-6 flex flex-col glass-panel-hover group">
-            <div class="flex justify-between items-start mb-6">
-              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-3xl">ev_station</span>
-              </div>
-              <span class="font-code text-sm text-gray-500">01</span>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-white mb-2">Carregadores / Wallboxes VEs</h3>
-            <p class="text-primary-light text-sm font-medium mb-3">Recarga segura, sob medida e pronta para escalar.</p>
-            <p class="text-gray-400 text-sm mb-5 leading-relaxed">
-              Prognósticos para desenvolver a infraestrutura completa de recarga para veículos elétricos em condomínios, empresas e indústrias — com medição individualizada e proteção contra sobrecarga.
-            </p>
-            <ul class="space-y-3 text-sm text-gray-400 flex-grow">
-              <li class="flex gap-2">
-                <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Projeto e Instalação:</strong> dimensionamento, especificação e implantação de wallboxes e pontos de recarga alinhados à demanda real do local.</span>
-              </li>
-              <li class="flex gap-2">
-                <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Medição Individualizada:</strong> rateio claro por unidade ou usuário, com transparência para síndicos, administradoras e empresas.</span>
-              </li>
-              <li class="flex gap-2">
-                <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Proteção contra Sobrecarga:</strong> gestão de potência e proteções técnicas para preservar a rede elétrica e a segurança da edificação.</span>
-              </li>
-            </ul>
-            <div class="pt-4 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-code">
-              <span class="text-primary">ELETROMOBILIDADE</span>
-              <div class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#ff5f1f]"></div>
-            </div>
-          </article>
-
-          <!-- 02 Engenharia Diagnóstica -->
-          <article class="glass-panel p-6 flex flex-col glass-panel-hover group lg:col-span-1">
             <div class="flex justify-between items-start mb-6">
               <div class="w-12 h-12 rounded bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                 <span class="material-symbols-outlined text-3xl">gavel</span>
               </div>
-              <span class="font-code text-sm text-gray-500">02</span>
+              <span class="font-code text-sm text-gray-500">01</span>
             </div>
             <h3 class="font-heading text-xl font-bold text-white mb-2">Engenharia Diagnóstica, Prognósticos &amp; Laudos</h3>
             <p class="text-primary-light text-sm font-medium mb-3">A segurança técnica e jurídica que o seu patrimônio exige.</p>
@@ -177,15 +142,15 @@
             <ul class="space-y-3 text-sm text-gray-400 flex-grow">
               <li class="flex gap-2">
                 <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Perícia Técnica e Judicial:</strong> atuação como perito ou assistente técnico em litígios complexos envolvendo sistemas de energia elétrica.</span>
+                <span><strong class="text-white">Perícia Técnica e Judicial:</strong> atuação como perito ou assistente técnico em litígios complexos envolvendo instalações e sistemas de engenharia.</span>
               </li>
               <li class="flex gap-2">
                 <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Consultoria e Assessoria Técnica:</strong> pareceres especializados para indústrias, comércios e o setor jurídico.</span>
+                <span><strong class="text-white">Consultoria e Assessoria Especializada:</strong> pareceres técnicos fundamentados para condomínios, indústrias, comércios e setor jurídico.</span>
               </li>
               <li class="flex gap-2">
                 <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Laudos Técnicos de Engenharia:</strong> inspeções detalhadas da qualidade, segurança e conformidade de instalações elétricas.</span>
+                <span><strong class="text-white">Laudos Técnicos de Engenharia:</strong> inspeções aprofundadas de conformidade com normas ABNT, NR-10, SPDA e segurança predial.</span>
               </li>
             </ul>
             <div class="pt-4 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-code">
@@ -194,35 +159,68 @@
             </div>
           </article>
 
-          <!-- 03 Energia & Mobilidade -->
+          <!-- 02 Vistoria Técnica e Fiscalização de Obras -->
+          <article class="glass-panel p-6 flex flex-col glass-panel-hover group">
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-12 h-12 rounded bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-3xl">fact_check</span>
+              </div>
+              <span class="font-code text-sm text-gray-500">02</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Vistoria Técnica &amp; Fiscalização de Obras</h3>
+            <p class="text-primary-light text-sm font-medium mb-3">Acompanhamento rigoroso para assegurar conformidade normativa, qualidade e prazos.</p>
+            <p class="text-gray-400 text-sm mb-5 leading-relaxed">
+              Vistorias técnicas minuciosas e fiscalização de intervenções civis e elétricas, garantindo que a execução cumpra fielmente os projetos executivos, normas técnicas e os mais altos padrões de segurança.
+            </p>
+            <ul class="space-y-3 text-sm text-gray-400 flex-grow">
+              <li class="flex gap-2">
+                <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
+                <span><strong class="text-white">Vistoria Cautelar de Vizinhança:</strong> registro e perícia preventiva do estado de edificações no entorno antes e durante obras.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
+                <span><strong class="text-white">Fiscalização e Auditoria de Obras:</strong> acompanhamento in loco da execução de instalações elétricas e obras, prevenindo vícios ocultos.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="text-secondary font-code text-xs shrink-0 mt-0.5">▸</span>
+                <span><strong class="text-white">Vistoria de Recebimento e Entrega:</strong> inspeção técnica detalhada de áreas comuns e unidades para aceite junto a construtoras.</span>
+              </li>
+            </ul>
+            <div class="pt-4 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-code">
+              <span class="text-secondary">VISTORIA &amp; FISCALIZAÇÃO</span>
+              <div class="w-2 h-2 rounded-full bg-secondary animate-pulse shadow-[0_0_8px_#00e3fd]"></div>
+            </div>
+          </article>
+
+          <!-- 03 Infraestrutura de Mobilidade Elétrica & Wallboxes (Unificado) -->
           <article class="glass-panel p-6 flex flex-col glass-panel-hover group">
             <div class="flex justify-between items-start mb-6">
               <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span class="material-symbols-outlined text-3xl">electrical_services</span>
+                <span class="material-symbols-outlined text-3xl">ev_station</span>
               </div>
               <span class="font-code text-sm text-gray-500">03</span>
             </div>
-            <h3 class="font-heading text-xl font-bold text-white mb-2">Energia &amp; Mobilidade Elétrica</h3>
-            <p class="text-primary-light text-sm font-medium mb-3">Sua infraestrutura preparada para o futuro do transporte.</p>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Mobilidade Elétrica &amp; Wallboxes VEs</h3>
+            <p class="text-primary-light text-sm font-medium mb-3">Infraestrutura completa, segura e pronta para escalar.</p>
             <p class="text-gray-400 text-sm mb-5 leading-relaxed">
-              A transição para os veículos elétricos exige planejamento técnico para não comprometer a segurança das edificações. Oferecemos inteligência energética para viabilizar a eletromobilidade.
+              Desenvolvemos soluções completas para recarga de veículos elétricos em condomínios residenciais, empresas e frotas — unindo projeto, medição individualizada e proteção avançada da rede.
             </p>
             <ul class="space-y-3 text-sm text-gray-400 flex-grow">
               <li class="flex gap-2">
                 <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Soluções para Condomínios Residenciais:</strong> projetos customizados e seguros para condomínios verticais (prédios) e horizontais (casas).</span>
+                <span><strong class="text-white">Projeto e Instalação de Wallboxes:</strong> dimensionamento de circuitos, quadros dedicados e implantação segura alinhada à demanda real.</span>
               </li>
               <li class="flex gap-2">
                 <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Diagnóstico Técnico-Energético:</strong> análise detalhada da capacidade da infraestrutura elétrica atual para a instalação segura de carregadores e wallboxes.</span>
+                <span><strong class="text-white">Diagnóstico e Gestão de Demanda:</strong> análise da capacidade energética para garantir a recarga simultânea sem quedas ou sobrecargas.</span>
               </li>
               <li class="flex gap-2">
                 <span class="text-primary font-code text-xs shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">Estudos de Viabilidade e Demanda:</strong> dimensionamento e gestão de potência para garantir a recarga dos veículos elétricos sem sobrecarregar a rede do condomínio.</span>
+                <span><strong class="text-white">Medição Individualizada:</strong> sistemas de rateio claro por vaga ou usuário, trazendo total transparência para condomínios e empresas.</span>
               </li>
             </ul>
             <div class="pt-4 mt-6 border-t border-white/10 flex items-center justify-between text-xs font-code">
-              <span class="text-primary">ENERGIA &amp; EV</span>
+              <span class="text-primary">ELETROMOBILIDADE &amp; EV</span>
               <div class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#ff5f1f]"></div>
             </div>
           </article>
@@ -273,13 +271,18 @@
     <!-- CTA Final -->
     <section class="py-20 px-6 bg-surface-low border-t border-white/10">
       <div class="max-w-4xl mx-auto glass-panel p-10 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">Vamos <span class="text-primary">ENERGIZAR</span> seu projeto?</h2>
-        <p class="text-gray-300 text-base mb-8 max-w-xl mx-auto">
-          Fale diretamente com nossa equipe de engenharia da E-Prognus para agendar seu diagnóstico energético ou solicitar consultoria técnica.
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#25D366] to-transparent"></div>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
+          Garanta a <span class="text-secondary">segurança técnica</span> e o respaldo que seu patrimônio exige
+        </h2>
+        <p class="text-gray-300 text-base mb-8 max-w-xl mx-auto leading-relaxed">
+          Fale diretamente com os engenheiros da E-Prognus para solicitar laudos periciais, vistorias de obras ou projetos de infraestrutura elétrica.
         </p>
-        <button type="button" data-open-whatsapp class="bg-primary text-black font-code text-xs font-bold px-10 py-4 rounded hover:bg-primary-light transition-all neon-glow inline-flex items-center gap-2">
-          FALE COM O ESPECIALISTA NO WHATSAPP <span class="material-symbols-outlined">chat</span>
+        <button type="button" data-open-whatsapp class="bg-[#25D366] text-black font-code text-xs sm:text-sm font-bold px-10 py-4 rounded hover:bg-[#20bd5a] transition-all shadow-[0_0_25px_rgba(37,211,102,0.35)] inline-flex items-center gap-3">
+          <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          <span>FALE COM O ESPECIALISTA NO WHATSAPP</span>
         </button>
       </div>
     </section>
@@ -328,6 +331,10 @@
         <button type="button" data-wa-topic="Perícia técnica / Laudo" class="wa-option text-left w-full glass-panel px-4 py-3 rounded hover:border-primary border border-transparent transition-all flex items-center justify-between gap-3 group">
           <span class="font-body text-sm text-gray-200 group-hover:text-white">Perícia técnica / Laudo</span>
           <span class="material-symbols-outlined text-primary text-lg">chat</span>
+        </button>
+        <button type="button" data-wa-topic="Vistoria Técnica / Fiscalização de Obras" class="wa-option text-left w-full glass-panel px-4 py-3 rounded hover:border-secondary border border-transparent transition-all flex items-center justify-between gap-3 group">
+          <span class="font-body text-sm text-gray-200 group-hover:text-white">Vistoria Técnica / Fiscalização de Obras</span>
+          <span class="material-symbols-outlined text-secondary text-lg">chat</span>
         </button>
         <button type="button" data-wa-topic="Consultoria / Assessoria" class="wa-option text-left w-full glass-panel px-4 py-3 rounded hover:border-primary border border-transparent transition-all flex items-center justify-between gap-3 group">
           <span class="font-body text-sm text-gray-200 group-hover:text-white">Consultoria / Assessoria</span>
