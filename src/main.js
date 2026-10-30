@@ -122,6 +122,15 @@ function initShader() {
       mouse.y = canvas.height - (event.clientY - rect.top);
     }
   });
+  window.addEventListener('touchmove', (event) => {
+    if (event.touches.length > 0) {
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width && rect.height) {
+        mouse.x = event.touches[0].clientX - rect.left;
+        mouse.y = canvas.height - (event.touches[0].clientY - rect.top);
+      }
+    }
+  }, { passive: true });
 
   function render(t) {
     syncSize();
