@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" fill="none" role="img" aria-label="E-Prognus Engenharia &amp; Laudos">
+  <defs>
+    <!-- Titanium Shield Gradients -->
+    <linearGradient id="h-shield-outer" x1="20" y1="10" x2="100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b8c2d1"/>
+      <stop offset="30%" stop-color="#7a8594"/>
+      <stop offset="70%" stop-color="#3c434f"/>
+      <stop offset="100%" stop-color="#191c23"/>
+    </linearGradient>
+    <linearGradient id="h-shield-bevel" x1="30" y1="20" x2="90" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#9aa5b5"/>
+      <stop offset="100%" stop-color="#48515e"/>
+    </linearGradient>
+
+    <!-- Monogram E Chiseled Titanium -->
+    <linearGradient id="h-e-front" x1="40" y1="35" x2="80" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7a8799"/>
+      <stop offset="50%" stop-color="#4e5866"/>
+      <stop offset="100%" stop-color="#2a303a"/>
+    </linearGradient>
+    <linearGradient id="h-e-bevel" x1="40" y1="35" x2="85" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#b8c2d1"/>
+      <stop offset="100%" stop-color="#555f6e"/>
+    </linearGradient>
+
+    <!-- High-Voltage Energy Spine (Lightning Bolt) -->
+    <linearGradient id="h-bolt-l" x1="55" y1="10" x2="65" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="50%" stop-color="#ff5f1f"/>
+      <stop offset="100%" stop-color="#d63f00"/>
+    </linearGradient>
+    <linearGradient id="h-bolt-r" x1="65" y1="10" x2="75" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffe299"/>
+      <stop offset="50%" stop-color="#ffa042"/>
+      <stop offset="100%" stop-color="#ff5f1f"/>
+    </linearGradient>
+
+    <!-- Drop Shadows & Glow -->
+    <filter id="h-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="h-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="60" cy="58" r="42" fill="#ff5f1f" fill-opacity="0.14" filter="blur(14px)"/>
+
+  <!-- ==================== SÍMBOLO 1C ==================== -->
+  <g transform="translate(-2, 0)">
+    <!-- 1. LIGHTNING ENERGY SPINE -->
+    <g filter="url(#h-glow)">
+      <!-- Top Spike -->
+      <polygon points="63,12 52,52 64,52 57,78 74,42 62,42 71,12" fill="url(#h-bolt-r)"/>
+      <polygon points="63,12 52,52 58,52 54,78 63,42 62,42 63,12" fill="url(#h-bolt-l)"/>
+      <!-- Bottom Spike -->
+      <polygon points="57,74 51,108 61,82 64,82" fill="url(#h-bolt-l)"/>
+      <polygon points="61,82 51,108 68,74" fill="url(#h-bolt-r)"/>
+    </g>
+
+    <!-- 2. TITANIUM SHIELD FRAME -->
+    <g filter="url(#h-shadow)">
+      <path d="M26,26 L42,16 L56,12 M70,12 L84,20 L88,44 L77,78 L61,104 L59,104 L43,78 L32,44 Z" 
+            fill="none" 
+            stroke="url(#h-shield-outer)" 
+            stroke-width="7" 
+            stroke-linejoin="miter" 
+            stroke-miterlimit="4"/>
+      <path d="M30,29 L44,20 L56,16 M70,16 L82,23 L85,44 L74,76 L60,98 L46,76 L36,44 Z" 
+            fill="none" 
+            stroke="url(#h-shield-bevel)" 
+            stroke-width="2" 
+            stroke-linejoin="miter" 
+            stroke-miterlimit="4"/>
+    </g>
+
+    <!-- 3. TITANIUM MONOGRAM "E" -->
+    <g filter="url(#h-shadow)">
+      <path d="M44,40 H78 L74,50 H56 V58 H71 L67,67 H56 V76 H76 L72,86 H44 Z" fill="url(#h-e-front)"/>
+      <!-- Bevel Highlights -->
+      <polygon points="44,40 78,40 74,45 50,45 50,81 44,86" fill="url(#h-e-bevel)"/>
+      <polygon points="50,45 74,45 71,50 56,50" fill="#ffffff" fill-opacity="0.8"/>
+      <polygon points="50,58 71,58 67,63 56,63" fill="#b0bac7"/>
+      <polygon points="50,76 76,76 72,81 50,81" fill="#8592a3"/>
+      <!-- Gleam on Center -->
+      <polygon points="61,58 69,58 65,67 59,67" fill="#ff7a18" fill-opacity="0.9" filter="drop-shadow(0 0 2px #ff5f1f)"/>
+    </g>
+  </g>
+
+  <!-- ==================== TIPOGRAFIA ==================== -->
+  <g transform="translate(132, 0)">
+    <!-- E-PROGNUS -->
+    <text x="0" y="62" 
+          font-family="'Space Grotesk', 'Inter', 'Segoe UI', sans-serif" 
+          font-size="44" 
+          font-weight="900" 
+          letter-spacing="2.5" 
+          fill="#ffffff">
+      E-PROGNUS
+    </text>
+
+    <!-- Subtítulo ENGENHARIA & LAUDOS -->
+    <text x="2" y="88" 
+          font-family="'JetBrains Mono', 'Roboto Mono', monospace" 
+          font-size="13.5" 
+          font-weight="700" 
+          letter-spacing="5.5" 
+          fill="#00e3fd">
+      ENGENHARIA &amp; LAUDOS
+    </text>
+
+    <!-- Micro Separator Line -->
+    <line x1="2" y1="98" x2="330" y2="98" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <circle cx="2" cy="98" r="1.5" fill="#ff5f1f"/>
+    <circle cx="330" cy="98" r="1.5" fill="#00e3fd"/>
+  </g>
+</svg>

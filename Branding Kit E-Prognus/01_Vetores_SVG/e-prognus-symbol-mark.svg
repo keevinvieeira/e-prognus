@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-label="E-Prognus Brasão Oficial">
+  <defs>
+    <!-- Titanium Gradients -->
+    <linearGradient id="ti-outer" x1="20" y1="10" x2="140" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cfd6e0"/>
+      <stop offset="30%" stop-color="#8a96a6"/>
+      <stop offset="65%" stop-color="#4a5361"/>
+      <stop offset="100%" stop-color="#1f242c"/>
+    </linearGradient>
+    <linearGradient id="ti-frame-dark" x1="30" y1="20" x2="130" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a303a"/>
+      <stop offset="50%" stop-color="#181c22"/>
+      <stop offset="100%" stop-color="#0f1216"/>
+    </linearGradient>
+    <linearGradient id="ti-frame-bevel" x1="40" y1="20" x2="120" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#94a1b3"/>
+      <stop offset="100%" stop-color="#3d4552"/>
+    </linearGradient>
+
+    <!-- Monogram E Chiseled Titanium -->
+    <linearGradient id="ti-e-front" x1="50" y1="40" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8e9bb0"/>
+      <stop offset="40%" stop-color="#5a6575"/>
+      <stop offset="85%" stop-color="#2a303a"/>
+      <stop offset="100%" stop-color="#181b22"/>
+    </linearGradient>
+    <linearGradient id="ti-e-light" x1="50" y1="40" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#c8d2e0"/>
+      <stop offset="70%" stop-color="#738194"/>
+      <stop offset="100%" stop-color="#38404d"/>
+    </linearGradient>
+
+    <!-- Minimalist Lightning Spine Behind E -->
+    <linearGradient id="ti-bolt-orange" x1="75" y1="45" x2="85" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffa84d"/>
+      <stop offset="45%" stop-color="#ff7a18"/>
+      <stop offset="85%" stop-color="#ff5f1f"/>
+      <stop offset="100%" stop-color="#d13800"/>
+    </linearGradient>
+
+    <!-- Cyan Glow -->
+    <filter id="cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="bolt-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="ti-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== 1. CYAN OUTER NEON CONTOUR ==================== -->
+  <path d="M80,12 
+           L124,25 
+           C128,68 116,108 80,146 
+           C44,108 32,68 36,25 
+           Z" 
+        fill="none" 
+        stroke="#00e3fd" 
+        stroke-width="1.8" 
+        stroke-linejoin="round"
+        filter="url(#cyan-glow)"/>
+
+  <!-- ==================== 2. HEAVY CHAMFERED TITANIUM SHIELD ==================== -->
+  <g filter="url(#ti-shadow)">
+    <!-- Outer Shield Beveled Rim -->
+    <path d="M80,15 
+             L121,27 
+             C124,66 113,104 80,140 
+             C47,104 36,66 39,27 
+             Z" 
+          fill="url(#ti-outer)"/>
+
+    <!-- Inner Recessed Shield Body (Dark Carbon/Titanium Cavity) -->
+    <path d="M80,22 
+             L115,32 
+             C117,66 108,98 80,130 
+             C52,98 43,66 45,32 
+             Z" 
+          fill="url(#ti-frame-dark)" 
+          stroke="url(#ti-frame-bevel)" 
+          stroke-width="1.2"/>
+
+    <!-- Architectural Facet Lines in Shield Frame -->
+    <line x1="80" y1="15" x2="80" y2="24" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.8"/>
+    <line x1="39" y1="27" x2="47" y2="34" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.8"/>
+    <line x1="121" y1="27" x2="113" y2="34" stroke="#738194" stroke-width="1.2"/>
+    <line x1="80" y1="130" x2="80" y2="140" stroke="#38404d" stroke-width="1.2"/>
+  </g>
+
+  <!-- ==================== 3. RAIO MINIMALISTA DISCRETO (POR TRÁS DO E) ==================== -->
+  <g filter="url(#bolt-glow)">
+    <!-- Raio Elétrico Perfeito, Discreto e Contido no Miolo -->
+    <polygon points="82,42 74,68 83,68 76,96 90,64 81,64 86,42" 
+             fill="url(#ti-bolt-orange)" 
+             stroke="#ffffff" 
+             stroke-width="0.6"
+             filter="drop-shadow(0 0 5px rgba(255,95,31,0.9))"/>
+  </g>
+
+  <!-- ==================== 4. MONOGRAMA 'E' 3D CHANFRADO EM TITÂNIO ==================== -->
+  <g filter="url(#ti-shadow)">
+    <!-- Base Front Face do E -->
+    <path d="M57,48 
+             H103 
+             L98,60 
+             H72 
+             V70 
+             H94 
+             L90,80 
+             H72 
+             V92 
+             H102 
+             L97,104 
+             H57 
+             Z" 
+          fill="url(#ti-e-front)"/>
+
+    <!-- Bisel e Chanfros 3D de Luz (Top & Left Edges) -->
+    <polygon points="57,48 103,48 98,54 64,54 64,98 57,104" fill="url(#ti-e-light)"/>
+    <polygon points="64,54 98,54 94,60 72,60" fill="#d2d9e3"/>
+    <!-- Braço Médio -->
+    <polygon points="64,70 94,70 90,75 72,75" fill="#a4b0c2"/>
+    <polygon points="72,75 90,75 87,80 72,80" fill="#2d333d"/>
+    <!-- Braço Inferior -->
+    <polygon points="64,92 102,92 97,98 64,98" fill="#758294"/>
+    <polygon points="64,98 97,98 93,104 57,104" fill="#1b1f26"/>
+
+    <!-- Contorno de Precisão Chiseled -->
+    <path d="M57,48 H103 L98,60 H72 V70 H94 L90,80 H72 V92 H102 L97,104 H57 Z" 
+          fill="none" 
+          stroke="#414a57" 
+          stroke-width="1.2" 
+          stroke-linejoin="bevel"/>
+  </g>
+
+  <!-- Micro-Reflexo Central do Raio através da Fenda do E -->
+  <polygon points="77,70 85,70 81,80 74,80" fill="#ff7a18" fill-opacity="0.8"/>
+</svg>
