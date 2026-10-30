@@ -52,16 +52,14 @@ A palavra **Prognus** origina-se do grego *prognosis* (conhecimento prévio, pre
 
 A pasta oficial `Branding Kit E-Prognus` está organizada nas seguintes subpastas:
 
-### `01_Vetores_SVG/` (Escalabilidade infinita sem perda de qualidade)
-- `e-prognus-symbol-mark.svg`: Símbolo heráldico isolado (alta resolução).
-- `e-prognus-logo-horizontal-dark.svg`: Logotipo horizontal completo para fundo escuro.
-- `e-prognus-logo-horizontal-light.svg`: Logotipo horizontal otimizado para papel timbrado A4 e fundo branco.
-- `e-prognus-symbol-monochrome-black.svg`: Versão 100% preta para carimbos físicos, xerox e autenticações.
-- `e-prognus-symbol-monochrome-white.svg`: Versão 100% branca para estampas e gravações a laser em metal/acrílico.
+### `01_Imagens_Oficiais_Alta_Resolucao/` (Arquivos mestres em altíssima definição)
+- `E-PROGNUS_Logo_Completa_Vertical_Master.png`: Logo completa vertical oficial aprovada (Opção B) com fundo escuro executivo.
+- `E-PROGNUS_Brasao_Simbolo_Transparente.png`: Brasão heráldico isolado em PNG transparente (512x512) com sombra suave, pronto para qualquer fundo.
+- `E-PROGNUS_Logo_Horizontal_Fundo_Escuro.png`: Assinatura horizontal oficial para fundos escuros, apresentações digitais e site.
+- `E-PROGNUS_Logo_Horizontal_Fundo_Claro.png`: Assinatura horizontal oficial otimizada para laudos periciais A4, papel timbrado e documentos impressos.
 
-### `02_Imagens_Mockups/` (Visualizações fotorrealistas de aplicação)
-- `E-PROGNUS_Brasao_Oficial_3D_v1.jpg`: Render 3D do brasão heráldico com o raio minimalista em relevo metálico.
-- `E-PROGNUS_Brasao_Oficial_3D_v2_Minimalista.jpg`: Variação com o raio como filamento de energia interno.
+### `02_Mockups_e_Apresentacao/` (Visualizações fotorrealistas de aplicação)
+- `E-PROGNUS_Prancha_Oficial_Aprovada.png`: Prancha de aprovação oficial com o brasão de titânio e raio sutil.
 - `E-PROGNUS_Mockup_Papelaria_e_Escritorio.jpg`: Aplicação real em pasta dossier de laudo técnico, papel timbrado A4 com gráficos, cartões de visita executivos e letreiro arquitetônico 3D em parede ripada.
 
 ### `03_Manual_da_Marca/`
