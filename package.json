@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "npx vite",
     "build": "npx --yes vite build && node build.js",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=e-prognus --branch=main",
     "preview": "npx vite preview"
   },
   "dependencies": {
